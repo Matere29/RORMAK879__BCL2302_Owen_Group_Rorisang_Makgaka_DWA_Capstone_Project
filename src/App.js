@@ -1,12 +1,18 @@
 
-import './App.css';
+import Main from "./Components/Main";
+import "./App.css"
 
-function App() {
+
+export default function App() {
+  
+  
+
   return (
-    <div className="App">
-    <h1>Pod Cast</h1>
+    <div>
+      <Main />
+    
     </div>
   );
 }
 
-export default App;
+

@@ -1,11 +1,10 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
+import MainLayout from '../layout/MainLayout'
 
 export default function ContactPage() {
   return (
-    <div>
-        <Navbar />
+    <MainLayout>
         <div>Contact Page</div>
-    </div>
+    </MainLayout>
   )
 }

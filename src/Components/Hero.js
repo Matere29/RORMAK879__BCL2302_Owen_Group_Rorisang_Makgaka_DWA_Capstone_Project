@@ -1,5 +1,5 @@
 import React from 'react'
-import mic from './Images/mic.png'
+import mic from './mic.png'
 
 
 
@@ -7,10 +7,10 @@ import mic from './Images/mic.png'
 
 export default function Hero() {
   return (
-    <section className='hero'>
-        
+    <section  className='hero'>
+        {/* <h2 className='hero--header'>You may be interested in...</h2> */}
         <img src={mic}  alt="mic" className='hero--photo'/>
-        <h2 className='hero--header'>You may be interested in...</h2>
+      
        
     </section>
   )
