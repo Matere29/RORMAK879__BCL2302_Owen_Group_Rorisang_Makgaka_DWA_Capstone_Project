@@ -1,26 +1,28 @@
 import Hero from './Hero';
 import BlogPage from '../Pages/BlogPage';
-import Navbar from './Navbar';
 import React from 'react'
-
-
+import MainLayout from '../layout/MainLayout';
+//import Search from '../Search';
 
 
 export default function Main(props) {
-  const [darkMode, setDarkMode] = React.useState(true);
+  // const [darkMode, setDarkMode] = React.useState(true);
   
-  function toggleDarkMode() {
-    setDarkMode(prevMode => !prevMode)
-  }
+  // function toggleDarkMode() {
+  //   setDarkMode(prevMode => !prevMode)
+  // }
   
 
   return (
   <>
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-
+   <MainLayout>
+        {/* <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
+        <Search /> */}
        
-        <Hero darkMode={darkMode}  />
-        <BlogPage darkMode={darkMode} />
+         <Hero  /> 
+        <BlogPage />
+        {/* <ShowDetail /> */}
+        </MainLayout>
         
   </>
   )

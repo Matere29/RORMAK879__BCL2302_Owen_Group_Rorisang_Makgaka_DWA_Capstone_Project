@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
-import './login.css'
-import Navbar from '../Navbar';
+import MainLayout from '../../layout/MainLayout';
+
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -19,8 +19,9 @@ export default function Login() {
         console.log(error);
       });
   }
-  <Navbar />
+  
   return (
+    <MainLayout>
    
     <div>
       <form className="form"onSubmit={login}>
@@ -44,5 +45,6 @@ export default function Login() {
         <button type="submit">Log In</button>
       </form>
     </div>
+    </MainLayout>
   );
 }
