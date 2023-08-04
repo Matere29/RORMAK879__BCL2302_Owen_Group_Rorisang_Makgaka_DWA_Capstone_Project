@@ -11,11 +11,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import BlogPage from './Pages/BlogPage';
+import Seasons from './Components/Seasons';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "Seasons",
+    element: <Seasons />,
   },
   {
     path: "About",

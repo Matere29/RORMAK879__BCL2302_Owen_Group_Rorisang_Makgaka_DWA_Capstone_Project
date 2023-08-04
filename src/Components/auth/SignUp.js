@@ -7,6 +7,31 @@ export default function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+
+  const formStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  };
+
+  const buttonStyle = {
+    padding: '10px 20px',
+    backgroundColor: 'rgb(232, 164, 176)',
+    color: 'black',
+    border: 'none',
+    borderRadius: '4px',
+    fontSize: '16px',
+    cursor: 'pointer',
+  };
+  const inputStyle = {
+    padding: '8px',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    fontSize: '16px',
+    width: '300px',
+    marginBottom: '10px',
+  };
+
   function SignUp(e) {
     e.preventDefault();
     createUserWithEmailAndPassword(auth, email, password)
@@ -21,13 +46,14 @@ export default function SignUp() {
   return (
     <MainLayout>
     <div className="Sign-in-container">
-      <form onSubmit={SignUp}>
+      <form style={formStyle} onSubmit={SignUp}>
         <h2>Create Account</h2>
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Enter your email"
+          style={inputStyle}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -36,10 +62,11 @@ export default function SignUp() {
           id="password"
           name="password"
           placeholder="Enter your password"
+          style={inputStyle}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Sign Up</button>
+        <button type="submit" style={buttonStyle}>Sign Up</button>
       </form>
     </div>
     </MainLayout>

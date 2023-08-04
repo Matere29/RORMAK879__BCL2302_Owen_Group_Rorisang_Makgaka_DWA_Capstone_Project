@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react'
-//import mic from './mic.png'
 import axios from 'axios';
-//import Slider from "react-slick"
 
 export default function Hero() {
   //const [showData, setShowData] = useState(null);
@@ -30,12 +28,7 @@ export default function Hero() {
     };
   }, [shows]);
   return (
-    // <section  className='hero'>
-    //     {/* <h2 className='hero--header'>You may be interested in...</h2> */}
-    //     {/* <img src={mic}  alt="mic" className='hero--photo'/> */}
-      
-       
-    // </section>
+  
     
     <div className="hero-section">
       {shows.length > 0 && (

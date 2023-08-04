@@ -41,9 +41,11 @@ nav.dark {
 .nav--logo_text {
     color:black;
     margin-right: auto;
-    font-family: 'Bungee Spice', cursive;
-    font-family: 'Pangolin', cursive;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Borel', cursive;
+    font-size: 35px;
+
+
+  
  }
 
 .nav--title {
@@ -285,7 +287,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
     background-color: #f8f8f8;
   }
   
@@ -308,3 +310,4 @@ ul {
     margin: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   }  
+  /* styles.css (or any other CSS file you are using) */

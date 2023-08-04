@@ -18,16 +18,24 @@ export default function Navbar(props) {
                 <nav ref={navRef} className={props.darkMode ? "dark" : ""}>
                     <img src={logo} alt=" logo" className='nav-logo' />
 
-                    <h2 className="nav--logo_text">Pod Cast</h2>
+                    <h2 className="nav--logo_text" >Pod Cast</h2>
 
-                    <input></input>
-                    <button>Search...</button>
-                    <select>
-                        <option>A-Z</option>
-                        <option>Z-A</option>
-                        <option>Newest Date</option>
-                        <option>Oldest Date</option>
-                    </select>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    
+
+
+                    
 
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/About">About</Link></li>
